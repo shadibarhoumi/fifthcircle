@@ -23,28 +23,6 @@ export default function Home() {
         <p>Hi David! -Shadi</p>
         <img width="1000" src="/mockup.png" alt="Mockup" />
       </Flex>
-      <div style={{ height: '500px', margin: '50px' }}>
-        <ArcherContainer strokeColor="red">
-          <Box position="relative">
-            <ArcherElement
-              id="element2"
-              relations={[
-                {
-                  targetId: 'element3',
-                  targetAnchor: 'left',
-                  sourceAnchor: 'right',
-                },
-              ]}
-            >
-              <div style={{ ...noteStyle }}>C</div>
-            </ArcherElement>
-
-            <ArcherElement id="element3">
-              <div style={{ ...noteStyle, marginLeft: '100px' }}>D</div>
-            </ArcherElement>
-          </Box>
-        </ArcherContainer>
-      </div>
     </>
   )
 }
